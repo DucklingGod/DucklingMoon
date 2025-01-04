@@ -1,0 +1,38 @@
+/* Existing CSS code */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add the new CSS code here */
+@media (max-width: 600px) {
+    .duckling-image.right {
+        display: none; /* Hides the right duckling */
+    }
+    .duckling-image.left {
+        left: 50%; /* Center the left duckling */
+        transform: translateX(-50%); /* Adjust for centering */
+    }
+    header {
+        padding: 2rem 1rem; /* Adjust header padding for smaller screens */
+    }
+    section {
+        padding: 2rem 1rem; /* Adjust section padding for smaller screens */
+    }
+    img {
+        max-width: 100%; /* Ensure all images scale down */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
